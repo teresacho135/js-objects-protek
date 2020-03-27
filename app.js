@@ -57,3 +57,42 @@ function PokedexThree (name, category, type, weakness) {
 
   // console.log(Snorlax.type)
   // returns 'Sleeping'
+
+  // Create a new object, and some properties, also add a function along with the object.
+
+  const pokedexFour = {
+    name: 'Oddish',
+    category: 'Weed',
+    type: [
+      'Grass', 
+      'Poison',
+    ],
+    weakness: [
+      'Fire',
+      'Flying',
+      'Ice',
+      'Psychic',
+    ],
+    gender: function() {
+      return this.name + ' can be either female or male.'
+    }
+  };
+
+  // console.log(pokedexFour.gender());
+  //returns 'Oddish can be either female or male'
+  // Create a new object,like “empdetails” that will contain methods that compute employee
+  //  annual salary,and average salary of employee using two methods. 
+  //  (So create two methods like anunalsalary(),avgsalary()).
+
+const empdetails = {
+  wage: 'wage',
+  hours: 'hours',
+  annualsalary: function() {
+    return this.wage + this.hours
+  },
+  avgsalary: function() {
+    return this.annualsalary + this.wage + this.hours
+  }
+};
+
+// console.log(empdetails.avgsalary());
