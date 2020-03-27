@@ -31,6 +31,20 @@ const pokedexTwo = {
 // console.log(pokedexTwo);
 
 //Object.create Method + classes
+//object prototype
+const orgObject = {
+  company: 'ABC Corp'
+};
+//creation of object called employee with property of name
+const employee = Object.create(orgObject, {
+  name: {
+    value: 'EmployeeOne'
+  },
+}
+);
+
+// console.log(employee.name)
+
 
 // Accessing all properties of that object.
 // console.log(pokedexTwo.weakness[1]);
