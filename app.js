@@ -31,6 +31,38 @@ const pokedexTwo = {
 // console.log(pokedexTwo);
 
 //Object.create Method + classes
+//object prototype
+const orgObject = {
+  company: 'ABC Corp'
+};
+//creation of object called employee with property of name
+const employee = Object.create(orgObject, {
+  name: {
+    value: 'EmployeeOne'
+  },
+}
+);
+
+// console.log(employee.name)
+
+//the class constructor of Car
+class Car {
+  constructor(make, model, year) {
+    this.manufacturer = make;
+    this.modelNumber = model;
+    this.yearMade = year;
+  }
+};
+
+// object Tacoma being created using class constructor
+const Tacoma = new Car(
+  'Toyota',
+  'Tacoma TRD PRO 4X4',
+  '2020',
+);
+
+// console.log(Tacoma.manufacturer);
+//returns Toyota
 
 // Accessing all properties of that object.
 // console.log(pokedexTwo.weakness[1]);
