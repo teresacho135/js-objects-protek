@@ -15,3 +15,17 @@ pokedex.weakness = [
 
 // console.log(pokedex);
 
+// USING OBJECT LITERALS
+
+const pokedexTwo = {
+  name: 'Ninetails',
+  category: 'Fox',
+  type: 'Fire',
+  weakness: [
+    'Ground',
+    'Rock',
+    'Water',
+  ]
+};
+
+// console.log(pokedexTwo);
