@@ -1,12 +1,12 @@
 // Create a new object with direct instance (using new operator), and add some properties to that object. 
 const pokedex = new Object();
-this.name = 'Bulbasaur';
-this.category = 'Seed';
-this.type = [
+pokedex.name = 'Bulbasaur';
+pokedex.category = 'Seed';
+pokedex.type = [
   'Grass',
   'Poison',
 ];
-this.weakness = [
+pokedex.weakness = [
   'Fire',
   'Flying',
   'Ice',
@@ -30,4 +30,10 @@ const pokedexTwo = {
 
 // console.log(pokedexTwo);
 
-//object.create method
+//Object.create Method + classes
+
+// Accessing all properties of that object.
+// console.log(pokedexTwo.weakness[1]);
+// returns 'Rock'
+console.log(pokedex.weakness);
+// returns [Array]
