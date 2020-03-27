@@ -57,3 +57,26 @@ function PokedexThree (name, category, type, weakness) {
 
   // console.log(Snorlax.type)
   // returns 'Sleeping'
+
+  // Create a new object, and some properties, also add a function along with the object.
+
+  const pokedexFour = {
+    name: 'Oddish',
+    category: 'Weed',
+    type: [
+      'Grass', 
+      'Poison',
+    ],
+    weakness: [
+      'Fire',
+      'Flying',
+      'Ice',
+      'Psychic',
+    ],
+    gender: function() {
+      return this.name + ' can be either female or male.'
+    }
+  };
+
+  // console.log(pokedexFour.gender());
+  //returns 'Oddish can be either female or male'
