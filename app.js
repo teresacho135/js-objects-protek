@@ -80,3 +80,19 @@ function PokedexThree (name, category, type, weakness) {
 
   // console.log(pokedexFour.gender());
   //returns 'Oddish can be either female or male'
+  // Create a new object,like “empdetails” that will contain methods that compute employee
+  //  annual salary,and average salary of employee using two methods. 
+  //  (So create two methods like anunalsalary(),avgsalary()).
+
+const empdetails = {
+  wage: 'wage',
+  hours: 'hours',
+  annualsalary: function() {
+    return this.wage + this.hours
+  },
+  avgsalary: function() {
+    return this.annualsalary + this.wage + this.hours
+  }
+};
+
+// console.log(empdetails.avgsalary());
